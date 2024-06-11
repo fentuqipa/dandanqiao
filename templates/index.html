@@ -68,10 +68,11 @@
                     <ul class="visible-links">
                         <li class="masthead__menu-item masthead__menu-item--lg"><a href="#">Qiao Dandan</a></li>
                         <li class="masthead__menu-item"><a href="#publications">Publications</a></li>
+                        <li class="masthead__menu-item"><a href="#conferences">Conferences</a></li>
                         <li class="masthead__menu-item"><a href="#talks">Talks</a></li>
                         <li class="masthead__menu-item"><a href="#teaching">Teaching</a></li>
-                        <li class="masthead__menu-item"><a href="#portfolio">Portfolio</a></li>
-                        <li class="masthead__menu-item"><a href="#blogs">Blog Posts</a></li>
+                        <li class="masthead__menu-item"><a href="#services">Services</a></li>
+                        <li class="masthead__menu-item"><a href="#awards">Awards</a></li>
                         <li class="masthead__menu-item"><a href="#cv">CV</a></li>
                     </ul>
                     <ul class="hidden-links hidden"></ul>
@@ -85,415 +86,439 @@
                 <div class="author__avatar"> <img src="https://www.comp.nus.edu.sg/stfphotos/qiaodd.jpg" class="author__avatar" alt="Your Sidebar Name"></div>
                 <div class="author__content">
                     <h3 class="author__name">Qiao Dandan</h3>
-                    <p class="author__bio">Short biography</p>
+                    <p class="author__bio">Personal Information</p>
                 </div>
                 <div class="author__urls-wrapper">
                     <button class="btn btn--inverse">Follow</button>
                     <ul class="author__urls social-icons">
                         <!-- Font Awesome icons / Biographic information -->
-                        <li class="author__desktop"><i class="fa-solid fa-location-dot icon-pad-right" aria-hidden="true"></i>COM2-04-15</li>
-                        <li class="author__desktop"><i class="fa fa-solid fa-building-columns icon-pad-right" aria-hidden="true"></i>National University of Singapore</li>
+                        <li class="author__desktop"><a href="https://www.google.com/maps/place/COM+2/@1.2942824,103.7741012,15z/data=!4m6!3m5!1s0x31da1af8b4dca745:0x138ac77cdd89a8f1!8m2!3d1.2942824!4d103.7741012!16s%2Fg%2F11c6lw2s04?entry=ttu"><i class="fa-solid fa-location-dot icon-pad-right" aria-hidden="true"></i>COM2-04-15</a></li>
+                        <li class="author__desktop"><a href="https://www.comp.nus.edu.sg/disa/people/qiaodd/"><i class="fa fa-solid fa-building-columns icon-pad-right" aria-hidden="true"></i>National University of Singapore</a></li>
                         <li><a href="mailto:none@example.org"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>qiaodd@comp.nus.edu.sg</a></li>
                         <!-- Font Awesome and Academicons icons / Academic websites -->
-                        <li><a href="https://scholar.google.com/citations?user=PS_CX0AAAAAJ"><i class="ai ai-google-scholar icon-pad-right"></i>Google Scholar</a></li>
-                        <li><a href="http://orcid.org/yourorcidurl"><i class="ai ai-orcid ai-fw icon-pad-right"></i>ORCID</a></li>
-                        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"><i class="ai ai-pubmed ai-fw icon-pad-right"></i>PubMed</a></li>
-                        <!-- Font Awesome icons / Repositories and software development -->
-                        <li><a href="https://github.com/academicpages"><i class="fab fa-fw fa-github icon-pad-right" aria-hidden="true"></i>Github</a></li>
-                        <!-- Font Awesome icons / Social media -->
-                        <li><a href="https://bsky.app/profile/bsky.app"><i class="fab fa-fw fa-bluesky icon-pad-right" aria-hidden="true"></i>Bluesky</a></li>
+                        <li><a href="https://scholar.google.com/citations?user=2ESyqbEAAAAJ&hl=en"><i class="ai ai-google-scholar icon-pad-right"></i>Google Scholar</a></li>
                     </ul>
                 </div>
                 </div>
             </div>
             <!-- Home section -->
-            <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-                <meta itemprop="headline" content="Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites">
-                <div class="page__inner-wrap">
-                <header>
-                    <h1 class="page__title" itemprop="headline">Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites</h1>
-                </header>
-                <section class="page__content" itemprop="text">
-                    <p>This is the front page of a website that is powered by the <a href="https://github.com/academicpages/academicpages.github.io">Academic Pages template</a> and hosted on GitHub pages. <a href="https://pages.github.com">GitHub pages</a> is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the <a href="https://mmistakes.github.io/minimal-mistakes/">Minimal Mistakes Jekyll Theme</a> created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork <a href="https://github.com/academicpages/academicpages.github.io">this repository</a> right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at <a href="http://stuartgeiger.com">stuartgeiger.com</a>, which uses <a href="https://github.com/staeiou/staeiou.github.io">this Github repository</a>.</p>
-                    <h1 id="a-data-driven-personal-website">A data-driven personal website</h1>
-                    <p>Like many other Jekyll-based GitHub Pages templates, Academic Pages makes you separate the website’s content from its form. The content &amp; metadata of your website are in structured markdown files, while various other files constitute the theme, specifying how to transform that content &amp; metadata into HTML pages. You keep these various markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the <a href="https://pages.github.com/">GitHub pages</a> service creates static HTML pages based on these files, which are hosted on GitHub’s servers free of charge.</p>
-                    <p>Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart’s content without touching the content of your site. If you get to a point where you’ve broken something in Jekyll/HTML/CSS beyond repair, your markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over – just be sure to save the markdown files! Finally, you can also write scripts that process the structured data on the site, such as <a href="https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb">this one</a> that analyzes metadata in pages about talks to display <a href="https://academicpages.github.io/talkmap.html">a map of every location you’ve given a talk</a>.</p>
-                    <h1 id="getting-started">Getting started</h1>
-                    <ol>
-                        <li>Register a GitHub account if you don’t have one and confirm your e-mail (required!)</li>
-                        <li>Fork <a href="https://github.com/academicpages/academicpages.github.io">this repository</a> by clicking the “fork” button in the top right.</li>
-                        <li>Go to the repository’s settings (rightmost item in the tabs that start with “Code”, should be below “Unwatch”). Rename the repository “[your GitHub username].github.io”, which will also be your website’s URL.</li>
-                        <li>Set site-wide configuration and create content &amp; metadata (see below – also see <a href="http://archive.is/3TPas">this set of diffs</a> showing what files were changed to set up <a href="https://getorg-testacct.github.io">an example site</a> for a user with the username “getorg-testacct”)</li>
-                        <li>Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.</li>
-                        <li>Check status by going to the repository settings, in the “GitHub pages” section</li>
-                    </ol>
-                    <h2 id="site-wide-configuration">Site-wide configuration</h2>
-                    <p>The main configuration file for the site is in the base directory in <a href="https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml">_config.yml</a>, which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site’s github repository. The configuration file for the top menu is in <a href="https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml">_data/navigation.yml</a>. For example, if you don’t have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header.</p>
-                    <h2 id="create-content--metadata">Create content &amp; metadata</h2>
-                    <p>For site content, there is one markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a markdown file in the <a href="https://github.com/academicpages/academicpages.github.io/tree/master/_talks">_talks directory</a>. At the top of each markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the <a href="https://academicpages.github.io/talks">Talks page</a>, each <a href="https://academicpages.github.io/talks/2012-03-01-talk-1">individual page</a> for specific talks, the talks section for the <a href="https://academicpages.github.io/cv">CV page</a>, and the <a href="https://academicpages.github.io/talkmap.html">map of places you’ve given a talk</a> (if you run this <a href="https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py">python file</a> or <a href="https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb">Jupyter notebook</a>, which creates the HTML for the map based on the contents of the _talks directory).</p>
-                    <p><strong>Markdown generator</strong></p>
-                    <p>I have also created <a href="https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator">a set of Jupyter notebooks</a> that converts a CSV containing structured data about talks or presentations into individual markdown files that will be properly formatted for the Academic Pages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the markdown files, then commit and push them to the GitHub repository.</p>
-                    <h2 id="how-to-edit-your-sites-github-repository">How to edit your site’s GitHub repository</h2>
-                    <p>Many people use a git client to create files on their local computer and then push them to GitHub’s servers. If you are not familiar with git, you can directly edit these configuration and markdown files directly in the github.com interface. Navigate to a file (like <a href="https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md">this one</a> and click the pencil icon in the top right of the content preview (to the right of the “Raw | Blame | History” buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the “Create new file” or “Upload files” buttons.</p>
-                    <p>Example: editing a markdown file for a talk <img src="/images/editing-talk.png" alt="Editing a markdown file for a talk" /></p>
-                    <h2 id="for-more-info">For more info</h2>
-                    <p>More info about configuring Academic Pages can be found in <a href="https://academicpages.github.io/markdown/">the guide</a>. The <a href="https://mmistakes.github.io/minimal-mistakes/docs/configuration/">guides for the Minimal Mistakes theme</a> (which this theme was forked from) might also be helpful.</p>
+            <article class="page">
+                <section>
+                    <h2>Position</h2>
+                    <ul>
+                        <li>Assistant Professor, Information Systems & Analytics
+                            National University of Singapore,  2018.07-Present</li>
+                    </ul>
                 </section>
-                <footer class="page__meta"></footer>
-                </div>
+                <section>
+                    <h2>Education</h2>
+                    <ul>
+                        <li>Ph.D., Information Systems, Tsinghua University, 2018</li>
+                        <li>Visiting Scholar, Information Systems, The University of Texas at Austin, 2015-2017</li>
+                        <li>B.S., Information Systems, Beijing University of Posts and Telecommunications, 2012</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Research Interests</h2>
+                    <p><b>Topics</b>: Digital Platform Design, Predictive Analytics</p>
+                    <p><b>Methodologies</b>: Econometric Analysis, Field Experiments, Computational Methods</p>
+                </section>
             </article>
 
             <!-- Publications section-->
             <div class="archive" id="publications">
                 <h1 class="page__title">Publications</h1>
-                <div class="wordwrap">You can also find my articles on <a href="https://scholar.google.com/citations?user=PS_CX0AAAAAJ">my Google Scholar profile</a>.</div>
-                <div class="list__item">
-                    <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">
-                        <h2 class="archive__item-title" itemprop="headline"> <a href="https://academicpages.github.io/publication/2024-02-17-paper-title-number-4" rel="permalink">Paper Title Number 4 </a></h2>
-                        <p>Published in <i>GitHub Journal of Bugs</i>, 2024</p>
-                        <p class="archive__item-excerpt" itemprop="description">
-                        <p>This paper is about fixing template issue #693.</p>
-                        </p>
-                        <p>Recommended citation: Your Name, You. (2024). &quot;Paper Title Number 3.&quot; <i>GitHub Journal of Bugs</i>. 1(3). <a href="http://academicpages.github.io/files/paper3.pdf">http://academicpages.github.io/files/paper3.pdf</a></p>
-                    </article>
-                </div>
-                <div class="list__item">
-                    <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">
-                        <h2 class="archive__item-title" itemprop="headline"> <a href="https://academicpages.github.io/publication/2015-10-01-paper-title-number-3" rel="permalink">Paper Title Number 3 </a></h2>
-                        <p>Published in <i>Journal 1</i>, 2015</p>
-                        <p class="archive__item-excerpt" itemprop="description">
-                        <p>This paper is about the number 3. The number 4 is left for future work.</p>
-                        </p>
-                        <p>Recommended citation: Your Name, You. (2015). &quot;Paper Title Number 3.&quot; <i>Journal 1</i>. 1(3). <a href="http://academicpages.github.io/files/paper3.pdf">http://academicpages.github.io/files/paper3.pdf</a></p>
-                    </article>
-                </div>
-                <div class="list__item">
-                    <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">
-                        <h2 class="archive__item-title" itemprop="headline"> <a href="https://academicpages.github.io/publication/2010-10-01-paper-title-number-2" rel="permalink">Paper Title Number 2 </a></h2>
-                        <p>Published in <i>Journal 1</i>, 2010</p>
-                        <p class="archive__item-excerpt" itemprop="description">
-                        <p>This paper is about the number 2. The number 3 is left for future work.</p>
-                        </p>
-                        <p>Recommended citation: Your Name, You. (2010). &quot;Paper Title Number 2.&quot; <i>Journal 1</i>. 1(2). <a href="http://academicpages.github.io/files/paper2.pdf">http://academicpages.github.io/files/paper2.pdf</a></p>
-                    </article>
-                </div>
-                <div class="list__item">
-                    <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">
-                        <h2 class="archive__item-title" itemprop="headline"> <a href="https://academicpages.github.io/publication/2009-10-01-paper-title-number-1" rel="permalink">Paper Title Number 1 </a></h2>
-                        <p>Published in <i>Journal 1</i>, 2009</p>
-                        <p class="archive__item-excerpt" itemprop="description">
-                        <p>This paper is about the number 1. The number 2 is left for future work.</p>
-                        </p>
-                        <p>Recommended citation: Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1). <a href="http://academicpages.github.io/files/paper1.pdf">http://academicpages.github.io/files/paper1.pdf</a></p>
-                    </article>
-                </div>
+                <section>
+                    <ul>
+                        <li>Warut Khern-am-nuai, Hossein Ghasemkhani, <b>Dandan Qiao</b>, Karthik Natarajan Kannan. 2023. <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2794149">“The Impact of Online Q&As on Product Sales: The Case of Amazon Answer”</a>, Forthcoming at <i>Information Systems Research</i>.</li>
+                        <li>Jason Chan, Shu He, <b>Dandan Qiao</b>. 2023. Andrew B. Whinston. <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3468426">“Shedding Light on the Dark: The Impact of Legal Enforcement on Darknet Transactions”</a>, Forthcoming at <i>Information Systems Research</i>.</li>
+                        <li><b>Dandan Qiao</b>, & Huaxia Rui. 2023. <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4119578">“Text Performance on the Vine Stage? The Effect of Incentive on Product Review Text Quality”</a>. <i>Information Systems Research</i>, 34(2), pp.676-697.</li>
+                        <li><b>Dandan Qiao</b>, Shun-Yang Lee, Andrew B. Whinston, Qiang Wei, 2021. <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3954687">“Mitigating the Adverse Effect of Monetary Incentives on Voluntary Contributions Online”</a>. <i>Journal of Management Information Systems</i>, 38(1), pp.82-107.</li>
+                        <li><b>Dandan Qiao</b>, Shun-Yang Lee, Andrew B. Whinston, Qiang Wei, 2020. <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3683253">“Financial
+                            Incentives Dampen Altruism in Online Prosocial Contributions: A Study of Online
+                            Reviews”</a>. <i>Information Systems Research</i>, 31(4), pp.1361-1375.</li>
+                        <li>Liye Wang, Jin Zhang, Guoqing Chen, <b>Dandan Qiao</b>, 2020. <a href="https://doi.org/10.1016/j.dss.2020.113465">“Identifying Comparable Entities with Indirectly Associative Relations and Word Embeddings from Web
+                            Search Logs”</a>. <i>Decision Support Systems</i>, p.113465.</li>
+                        <li>Xunhua Guo, Qiang Wei, Guoqing Chen, Jin Zhang, <b>Dandan Qiao</b>, 2017. <a href="https://misq.umn.edu/extracting-representative-information-on-intra-organizational-blogging-platforms.html">“Extracting Representative Information on Intra-Organizational Blogging Platforms”</a>. <i>MIS Quarterly</i>, 41(4), pp.1105-1127.</li>
+                        <li><b>Dandan Qiao</b>, Jin Zhang, Qiang Wei, Guoqing Chen, 2017. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0378720616303330">“Finding Competitive
+                            Keywords from Query Logs to Enhance Search Engine Advertising”</a>. <i>Information &
+                            Management</i>, 54(4), pp.531-543.</li>
+                        <li>Qiang Wei, <b>Dandan Qiao</b>, Jin Zhang, Guoqing Chen, Xunhua Guo, 2016. <a href="https://dl.acm.org/doi/10.1145/2996196">“A Novel
+                            Bipartite Graph based Competitiveness Degree Analysis from Query Logs”</a>. <i>ACM
+                            Transactions on Knowledge Discovery from Data (TKDD)</i>, 11(2), pp.1-25</li>
+                    </ul>
+                </section>
+            </div>
+
+            <!-- Conferences section-->
+            <div class="archive" id="conferences">
+                <h1 class="page__title">Conferences</h1>
+                <ul>
+                    <li>Dinghao Xi, Ying Lu, <b>Dandan Qiao</b>, Wei Xu, “Unveiling the Secrets of Collaboration on Video-Sharing Platforms” <i>International Conference on Information Systems</i> (ICIS), Hyderabad, India, 2023.</li>
+                    <li>Dinghao Xi, Ying Lu, <b>Dandan Qiao</b>, Wei Xu, “Unveiling the Secrets of Collaboration on Video-Sharing Platforms” INFORMS Conference on <i>Information Systems and Technology</i> (CIST), Arizona, United States, 2023.</li>
+                    <li>Haoyu Yuan, <b>Dandan Qiao</b>, Qiang Wei, “Decoding Persuasion: A Hierarchical Deep Learning Framework for Predicting Crowdfunding Success, ” <i>INFORMS Workshop on Data Science</i> (WDS), Arizona, United States, 2023.</li>
+                    <li>Jingyuan Deng, <b>Dandan Qiao</b>, Warut Khern-Am-Nuai, “An Empirical Study about
+                        the Impact of Incentivized Reviews on Product Sales: The Case of Amazon Vine Program” The 16th China Summer Workshop on Information Management (CSWIM),
+                        Changsha, China, 2023.</li>
+                    <li>Ying Lu, <b>Dandan Qiao</b>, Shu He, Xiaoying Xu, Bernard C Y Tan, “Exploration or
+                        Solidification: Modeling Users’ Dynamics of Collusive Behavior in Decentralized Online Communities” The 16th China Summer Workshop on Information Management
+                        (CSWIM), Changsha, China, 2023.</li>
+                    <li>Tong Yang, Benjiang Lu, <b>Dandan Qiao</b>, “The Impact of Vehicle Purchase Tax: A
+                        Construal Level Analysis of Consumer Reviews” The annual Pacific Asia Conference
+                        on Information Systems (PACIS), Nanchang, China, 2023</li>
+                    <li>Ying Lu, <b>Dandan Qiao</b>, Shu He, Bernard C Y Tan, “Secrets of Bellwethers: The
+                        Effect of Search Intermediary on Market Structure and Vendor Strategy in Darknet,”
+                        <i>INFORMS Conference on Information Systems and Technology</i> (CIST), Indianapolis,
+                        United States, 2022.</li>
+                    <li>Jingyuan Deng, Grace Gu, <b>Dandan Qiao</b>, “Wisdom Overlooked: Spillover Effects
+                        of Firm-Driven Contest on User Innovation and Crowd Education,” <i>INFORMS Conference on Information Systems and Technology</i> (CIST), Indianapolis, United States,
+                        2022.</li>
+                    <li>Jingyuan Deng, Grace Gu, <b>Dandan Qiao</b>, “Whom to Listen to and When? Empirically Studying User Innovation over Product Development Life Cycle,” <i>Seventeenth
+                        Symposium on Statistical Challenges in Electronic Commerce Research</i> (SCECR),
+                        Madrid, Spain, June 2022.</li>
+                    <li>Jingyuan Deng, Grace Gu, <b>Dandan Qiao</b>, “Whom to Listen to and When? Empirically Studying User Innovation over Product Development Life Cycle,” <i>Strategic
+                        Management Society</i> (SMS), London, UK, 2022.</li>
+                    <li>Lin Qiu, <b>Dandan Qiao</b>, Bernard C Y Tan, Andrew B. Whinston, “More than a
+                        Ride: An Investigation on Ride-Hailing Services and Racial Hate Crimes,” <i>Sixteenth
+                        Symposium on Statistical Challenges in Electronic Commerce Research</i> (SCECR),
+                        Madrid, Spain, June 2020.</li>
+                    <li>Jason Chan, Shu He, <b>Dandan Qiao</b>, Andrew B. Whinston, “Shedding Light on the
+                        Dark: The Impact of Legal Enforcement on Darknet Transactions,” <i>Workshop on
+                        Information Systems and Economics</i> (WISE), Munich, Germany, December 2019.</li>
+                    <li><b>Dandan Qiao</b>, Shun-Yang Lee, Andrew B. Whinston, Qiang Wei, “Overcoming the
+                        Crowding-Out Effect of Monetary Incentive on Pro-Social Behavior,” <i>International
+                        Conference on Information Systems</i>, Seoul, South Korea, December 2017.</li>
+                    <li><b>Dandan Qiao</b>, “Applying Financial Incentives in Online Pro-social Contexts: Crowdingout Effects and Overcoming Strategies,” <i>International Conference on Information
+                        Systems Doctoral Consortium</i>, Seoul, South Korea, December 2017.</li>
+                    <li><b>Dandan Qiao</b>, Shun-Yang Lee, Andrew B. Whinston, Qiang Wei, “Crowding-Out
+                        Effect Mitigation through Intervention Strategies,” <i>INFORMS Conference on Information Systems and Technology</i> (CIST), Houston, TX, October 2017.</li>
+                    <li>Samuel L. Blazek, <b>Dandan Qiao</b>, Andrew B. Whinston Guoqing Chen, “Dark Net
+                        Markets: Protect Your Privacy in Future E-commerce,” <i>Workshop on Information
+                        Systems and Economics</i> (WISE), Seoul, South Korea, December 2017.</li>
+                    <li>Samuel L. Blazek, <b>Dandan Qiao</b>, Deepayan Chakrabarti, Andrew B. Whinston,
+                        “The Price of Privacy: Insights from Anonymous Marketplace,” <i>Annual Digital Information Policy Scholars Conference</i>, George Mason University, Arlington, VA, April
+                        2017.</li>
+                    <li><b>Dandan Qiao</b>, Shun-Yang Lee, Andrew B. Whinston, Qiang Wei, “Incentive Provision and Pro-Social Behaviors,” <i>Hawaii International Conference on System Sciences</i>
+                        (HICSS), Big Island, HI, January 2017.</li>
+                    <li><b>Dandan Qiao</b>, Shun-Yang Lee, Andrew B. Whinston, Qiang Wei, “Incentive Provision and Pro-Social Behaviors,” <i>INFORMS Conference on Information Systems and
+                        Technology</i> (CIST), Nashville, TN, November 2016.</li>
+                    <li><b>Dandan Qiao</b>, Jin Zhang, “A Novel Keyword Suggestion Method to Achieve Competitive Advertising on Search Engines,” The Pacific Asia Conference on Information
+                        Systems (PACIS), Singapore, July 2015.</li>
+                    <li><b>Dandan Qiao</b>, Qiang Wei, Jin Zhang, Guoqing Chen, “A Bipartite Graph Based
+                        Competitiveness Degrees Analysis with Query Logs on Search Engine,” <i>Conference
+                        of the International Fuzzy Systems Association and the European Society for Fuzzy
+                        Logic and Technology</i> (IFSA-EUSFLAT), Gij´on, Spain, June 2015.</li>
+                </ul>
             </div>
 
             <!-- Talks section -->
             <div class="archive" id="talks">
-                <h1 class="page__title">Talks and presentations</h1>
-                <div class="list__item">
-                    <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-                        <h2 class="archive__item-title" itemprop="headline"> <a href="https://academicpages.github.io/talks/2014-03-01-talk-3" rel="permalink">Conference Proceeding talk 3 on Relevant Topic in Your Field </a></h2>
-                        <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> March 01, 2014</p>
-                        <p class="archive__item-excerpt" itemprop="description">Conference proceedings talk, Testing Institute of America 2014 Annual Conference, Los Angeles, CA
-                        <p class="archive__item-excerpt" itemprop="description">
-                        <p>This is a description of your conference proceedings talk, note the different field in type. You can put anything in this field.</p>
-                        </p>
-                    </article>
-                </div>
-                <div class="list__item">
-                    <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-                        <h2 class="archive__item-title" itemprop="headline"> <a href="https://academicpages.github.io/talks/2014-02-01-talk-2" rel="permalink">Talk 2 on Relevant Topic in Your Field </a></h2>
-                        <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> February 01, 2014</p>
-                        <p class="archive__item-excerpt" itemprop="description">Talk, London School of Testing, London, UK
-                        <p class="archive__item-excerpt" itemprop="description">
-                        <p><a href="http://example2.com">More information here</a></p>
-                        </p>
-                    </article>
-                </div>
-                <div class="list__item">
-                    <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-                        <h2 class="archive__item-title" itemprop="headline"> <a href="https://academicpages.github.io/talks/2013-03-01-tutorial-1" rel="permalink">Tutorial 1 on Relevant Topic in Your Field </a></h2>
-                        <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> March 01, 2013</p>
-                        <p class="archive__item-excerpt" itemprop="description">Tutorial, UC-Berkeley Institute for Testing Science, Berkeley CA, USA
-                        <p class="archive__item-excerpt" itemprop="description">
-                        <p><a href="http://exampleurl.com">More information here</a></p>
-                        </p>
-                    </article>
-                </div>
-                <div class="list__item">
-                    <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-                        <h2 class="archive__item-title" itemprop="headline"> <a href="https://academicpages.github.io/talks/2012-03-01-talk-1" rel="permalink">Talk 1 on Relevant Topic in Your Field </a></h2>
-                        <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> March 01, 2012</p>
-                        <p class="archive__item-excerpt" itemprop="description">Talk, UC San Francisco, Department of Testing, San Francisco, California
-                        <p class="archive__item-excerpt" itemprop="description">
-                        <p>This is a description of your talk, which is a markdown files that can be all markdown-ified like any other post. Yay markdown!</p>
-                        </p>
-                    </article>
-                </div>
+                <h1 class="page__title">Invited Talks</h1>
+                <ul>
+                    <li>School of Business, Renmin University of China, 2023</li>
+                    <li>School of Business, University of Hong Kong, 2021</li>
+                    <li>School of Economics and Management, Tsinghua University, 2020</li>
+                    <li>School of Business, Indiana University Bloomington, 2017</li>
+                    <li>School of Business, Nanyang Technological University, 2017</li>
+                    <li>Claremont Graduate University, 2017</li>
+                </ul>
             </div>
 
             <!-- Teaching section -->
             <div class="archive" id="teaching">
                 <h1 class="page__title">Teaching</h1>
-                <div class="list__item">
-                    <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-                        <h2 class="archive__item-title" itemprop="headline"> <a href="https://academicpages.github.io/teaching/2015-spring-teaching-1" rel="permalink">Teaching experience 2 </a></h2>
-                        <p> Workshop, <i>University 1, Department</i>, 2015</p>
-                        <p class="archive__item-excerpt" itemprop="description">
-                        <p>This is a description of a teaching experience. You can use markdown like any other post.</p>
-                        </p>
-                    </article>
-                </div>
-                <div class="list__item">
-                    <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-                        <h2 class="archive__item-title" itemprop="headline"> <a href="https://academicpages.github.io/teaching/2014-spring-teaching-1" rel="permalink">Teaching experience 1 </a></h2>
-                        <p> Undergraduate course, <i>University 1, Department</i>, 2014</p>
-                        <p class="archive__item-excerpt" itemprop="description">
-                        <p>This is a description of a teaching experience. You can use markdown like any other post.</p>
-                        </p>
-                    </article>
-                </div>
+                <section>
+                    <h2>Teaching Interests</h2>
+                    <ul>
+                        <li>Business Analytics</li>
+                        <li>Platform Design</li>
+                        <li>Computational Social Science</li>
+                    </ul>
+                    <h2>Class Instructor / Teaching Assistant</h2>
+                    <ul>
+                        <li>Mining Business Insights from Web Data (BT4222), National University of Singapore (2018-2023)</li>
+                        <li>Analytics Driven Design of Adaptive Systems (BT4014), National University of Singapore (2019-2023)</li>
+                        <li>Probability and Statistics, Tsinghua University / Chinese University of Hong Kong (2013-2015)</li>
+                    </ul>
+                    <h2>Supervised Ph.D. Students</h2>
+                    <ul>
+                        <li>Ying Lu, National University of Singapore, 5th-year</li>
+                        <li>Yiming Liu, National University of Singapore, 3rd-year</li>
+                        <li>Jingyuan Deng, National University of Singapore, 2nd-year</li>
+                        <li>Tong Yang, Dalian University of Technology, 4th-year</li>
+                        <li>Dinghao Xi, Renmin University of China, 4th-year</li>
+                        <li>Qian Xiong, Tsinghua University, 2nd-year</li>
+                        <li>Haoyu Yuan, Tsinghua University, 5th-year</li>
+                    </ul>
+                </section>
             </div>
 
             <!-- Portfolio section -->
-            <div class="archive" id="portfolio">
-                <h1 class="page__title">Portfolio</h1>
-                <div class="list__item">
-                    <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-                        <h2 class="archive__item-title" itemprop="headline"> <a href="https://academicpages.github.io/portfolio/portfolio-1/" rel="permalink">Portfolio item number 1 </a></h2>
-                        <p class="archive__item-excerpt" itemprop="description">
-                        <p>Short description of portfolio item number 1<br /><img src="/images/500x300.png" /></p>
-                        </p>
-                    </article>
-                </div>
-                <div class="list__item">
-                    <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-                        <h2 class="archive__item-title" itemprop="headline"> <a href="https://academicpages.github.io/portfolio/portfolio-2/" rel="permalink">Portfolio item number 2 </a></h2>
-                        <p class="archive__item-excerpt" itemprop="description">
-                        <p>Short description of portfolio item number 2 <br /><img src="/images/500x300.png" /></p>
-                        </p>
-                    </article>
-                </div>
+            <div class="archive" id="services">
+                <h1 class="page__title">Services</h1>
+                <h2>Department Service</h2>
+                    <ul>
+                        <li>Ph.D. coordinator, Department of Information Systems and Analytics, NUS, 2023 Jan - Present</li>
+                        <li>MComp IS committee member, Department of Information Systems and Analytics, NUS, 2020-2022</li>
+                    </ul>
+                <h2>Referee for Journals</h2>
+                <ul>
+                    <li>Management Science (MS)</li>
+                    <li>Information Systems Research (ISR)</li>
+                    <li>MIS Quarterly (MISQ)</li>
+                    <li>INFORMS Journal on Computing (JOC)</li>
+                    <li>Journal of Management Information Systems (JMIS)</li>
+                    <li>Production and Operations Management (POM)</li>
+                    <li>Journal of the Association for Information Science and Technology (JAIST)</li>
+                    <li>Information and Management (I&M)</li>
+                    <li>Electronic Commerce Research (ECR)</li>
+                </ul>
+                <h2>Referee for Conferences</h2>
+                <ul>
+                    <li>International Conference on Information Systems (ICIS)</li>
+                    <li>Conference on Information Systems and Technology (CIST)</li>
+                    <li>Hawaii International Conference on System Sciences (HICSS)</li>
+                    <li>Workshop on Information Technologies and Systems (WITS)</li>
+                    <li>Pacific Asia Conference on Information Systems (PACIS)</li>
+                    <li>China Summer Workshop on Information Management (CSWIM)</li>
+                </ul>
+                <h2>Editorship of Conferences</h2>
+                <ul>
+                    <li>Track Co-Chair for Pacific Asia Conference on Information Systems, 2023</li>
+                    <li>Track Associate Editor for International Conference on Information Systems, 2023, 2022, 2021, 2020, 2019</li>
+                    <li>Track Associate Editor for Pacific Asia Conference on Information Systems, 2022, 2021, 2020</li>
+                </ul>
             </div>
 
             <!-- Blog posts section -->
-            <div class="archive" id="blogs">
-                <h1 class="page__title">Blog posts</h1>
-                <h2 id="2199" class="archive__subtitle">2199</h2>
-                <div class="list__item">
-                    <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-                        <h2 class="archive__item-title" itemprop="headline"> <a href="https://academicpages.github.io/posts/2012/08/blog-post-4/" rel="permalink">Future Blog Post </a></h2>
-                        <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> less than 1 minute read</p>
-                        <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2199-01-01T00:00:00-08:00">January 01, 2199</time></p>
-                        <p class="archive__item-excerpt" itemprop="description">
-                        <p>This post will show up by default. To disable scheduling of future posts, edit <code class="language-plaintext highlighter-rouge">config.yml</code> and set <code class="language-plaintext highlighter-rouge">future: false</code>.</p>
-                        </p>
-                    </article>
-                </div>
-                <h2 id="2015" class="archive__subtitle">2015</h2>
-                <div class="list__item">
-                    <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-                        <h2 class="archive__item-title" itemprop="headline"> <a href="https://academicpages.github.io/posts/2012/08/blog-post-4/" rel="permalink">Blog Post number 4 </a></h2>
-                        <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> less than 1 minute read</p>
-                        <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2015-08-14T00:00:00-07:00">August 14, 2015</time></p>
-                        <p class="archive__item-excerpt" itemprop="description">
-                        <p>This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.</p>
-                        </p>
-                    </article>
-                </div>
-                <h2 id="2014" class="archive__subtitle">2014</h2>
-                <div class="list__item">
-                    <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-                        <h2 class="archive__item-title" itemprop="headline"> <a href="https://academicpages.github.io/posts/2014/08/blog-post-3/" rel="permalink">Blog Post number 3 </a></h2>
-                        <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> less than 1 minute read</p>
-                        <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2014-08-14T00:00:00-07:00">August 14, 2014</time></p>
-                        <p class="archive__item-excerpt" itemprop="description">
-                        <p>This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.</p>
-                        </p>
-                    </article>
-                </div>
-                <h2 id="2013" class="archive__subtitle">2013</h2>
-                <div class="list__item">
-                    <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-                        <h2 class="archive__item-title" itemprop="headline"> <a href="https://academicpages.github.io/posts/2013/08/blog-post-2/" rel="permalink">Blog Post number 2 </a></h2>
-                        <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> less than 1 minute read</p>
-                        <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2013-08-14T00:00:00-07:00">August 14, 2013</time></p>
-                        <p class="archive__item-excerpt" itemprop="description">
-                        <p>This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.</p>
-                        </p>
-                    </article>
-                </div>
-                <h2 id="2012" class="archive__subtitle">2012</h2>
-                <div class="list__item">
-                    <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-                        <h2 class="archive__item-title" itemprop="headline"> <a href="https://academicpages.github.io/posts/2012/08/blog-post-1/" rel="permalink">Blog Post number 1 </a></h2>
-                        <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> less than 1 minute read</p>
-                        <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2012-08-14T00:00:00-07:00">August 14, 2012</time></p>
-                        <p class="archive__item-excerpt" itemprop="description">
-                        <p>This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.</p>
-                        </p>
-                    </article>
-                </div>
+            <div class="archive" id="awards">
+                <h1 class="page__title">Honors, Awards, and Grants</h1>
+                <h2>Grants</h2>
+                <ul>
+                    <li>Ministry of Education Academic Research Fund Tier-1, 2021-2024</li>
+                    <li>Ministry of Education Academic Research Fund Start-up, 2018-2022</li>
+                    <li>NET Institute Summer Grant, Summer 2019</li>
+                </ul>
+                <h2>Awards</h2>
+                <ul>
+                    <li>INFORMS ISS Gordon Davis Young Scholar Award, 2023</li>
+                    <li>Nomination for Singapore Young Scientist Awards, 2022</li>
+                    <li>17th Beijing Philosophy and Social Sciences Outstanding Achievement Awards, 2019</li>
+                    <li>Excellent Graduate of Beijing, 2018, 2012</li>
+                    <li>Excellent Doctoral Thesis, 2018</li>
+                    <li>China National Scholarship, 2016, 2009</li>
+                    <li>Tsinghua-Jiangzhen Scholarship, 2015, 2014</li>
+                </ul>
             </div>
 
             <!-- CV section -->
             <div class="archive" id="cv">
-                <h1 class="page__title">CV</h1>
-                <h1 id="education">Education</h1>
-                <ul>
-                    <li>Ph.D in Version Control Theory, GitHub University, 2018 (expected)</li>
-                    <li>M.S. in Jekyll, GitHub University, 2014</li>
-                    <li>B.S. in GitHub, GitHub University, 2012</li>
-                </ul>
-                <h1 id="work-experience">Work experience</h1>
-                <ul>
-                    <li>
-                        Spring 2024: Academic Pages Collaborator
-                        <ul>
-                            <li>Github University</li>
-                            <li>Duties includes: Updates and improvements to template</li>
-                            <li>Supervisor: The Users</li>
-                        </ul>
-                    </li>
-                    <li>
-                        Fall 2015: Research Assistant
-                        <ul>
-                            <li>Github University</li>
-                            <li>Duties included: Merging pull requests</li>
-                            <li>Supervisor: Professor Hub</li>
-                        </ul>
-                    </li>
-                    <li>
-                        Summer 2015: Research Assistant
-                        <ul>
-                            <li>Github University</li>
-                            <li>Duties included: Tagging issues</li>
-                            <li>Supervisor: Professor Git</li>
-                        </ul>
-                    </li>
-                </ul>
-                <h1 id="skills">Skills</h1>
-                <ul>
-                    <li>Skill 1</li>
-                    <li>
-                        Skill 2
-                        <ul>
-                            <li>Sub-skill 2.1</li>
-                            <li>Sub-skill 2.2</li>
-                            <li>Sub-skill 2.3</li>
-                        </ul>
-                    </li>
-                    <li>Skill 3</li>
-                </ul>
-                <h1 id="publications">Publications</h1>
-                <ul>
-                    <div class="list__item">
-                        <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">
-                            <li>
-                                <h3 class="archive__item-title" itemprop="headline"> <a href="https://academicpages.github.io/publication/2024-02-17-paper-title-number-4" rel="permalink">Paper Title Number 4 </a></h3>
-                                <p class="archive__item-excerpt" itemprop="description">Your Name, You. (2024). &quot;Paper Title Number 3.&quot; <i>GitHub Journal of Bugs</i>. 1(3).</p>
-                            </li>
-                        </article>
-                    </div>
-                    <div class="list__item">
-                        <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">
-                            <li>
-                                <h3 class="archive__item-title" itemprop="headline"> <a href="https://academicpages.github.io/publication/2015-10-01-paper-title-number-3" rel="permalink">Paper Title Number 3 </a></h3>
-                                <p class="archive__item-excerpt" itemprop="description">Your Name, You. (2015). &quot;Paper Title Number 3.&quot; <i>Journal 1</i>. 1(3).</p>
-                            </li>
-                        </article>
-                    </div>
-                    <div class="list__item">
-                        <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">
-                            <li>
-                                <h3 class="archive__item-title" itemprop="headline"> <a href="https://academicpages.github.io/publication/2010-10-01-paper-title-number-2" rel="permalink">Paper Title Number 2 </a></h3>
-                                <p class="archive__item-excerpt" itemprop="description">Your Name, You. (2010). &quot;Paper Title Number 2.&quot; <i>Journal 1</i>. 1(2).</p>
-                            </li>
-                        </article>
-                    </div>
-                    <div class="list__item">
-                        <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">
-                            <li>
-                                <h3 class="archive__item-title" itemprop="headline"> <a href="https://academicpages.github.io/publication/2009-10-01-paper-title-number-1" rel="permalink">Paper Title Number 1 </a></h3>
-                                <p class="archive__item-excerpt" itemprop="description">Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).</p>
-                            </li>
-                        </article>
-                    </div>
-                </ul>
-                <h1 id="talks">Talks</h1>
-                <ul>
-                    <div class="list__item">
-                        <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">
-                            <li>
-                                <h3 class="archive__item-title" itemprop="headline"> <a href="https://academicpages.github.io/talks/2014-03-01-talk-3" rel="permalink">Conference Proceeding talk 3 on Relevant Topic in Your Field </a></h3>
-                                <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> March 01, 2014</p>
-                                <p class="archive__item-excerpt" itemprop="description">Conference proceedings talk at Testing Institute of America 2014 Annual Conference, Los Angeles, CA</p>
-                            </li>
-                        </article>
-                    </div>
-                    <div class="list__item">
-                        <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">
-                            <li>
-                                <h3 class="archive__item-title" itemprop="headline"> <a href="https://academicpages.github.io/talks/2014-02-01-talk-2" rel="permalink">Talk 2 on Relevant Topic in Your Field </a></h3>
-                                <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> February 01, 2014</p>
-                                <p class="archive__item-excerpt" itemprop="description">Talk at London School of Testing, London, UK</p>
-                            </li>
-                        </article>
-                    </div>
-                    <div class="list__item">
-                        <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">
-                            <li>
-                                <h3 class="archive__item-title" itemprop="headline"> <a href="https://academicpages.github.io/talks/2013-03-01-tutorial-1" rel="permalink">Tutorial 1 on Relevant Topic in Your Field </a></h3>
-                                <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> March 01, 2013</p>
-                                <p class="archive__item-excerpt" itemprop="description">Tutorial at UC-Berkeley Institute for Testing Science, Berkeley CA, USA</p>
-                            </li>
-                        </article>
-                    </div>
-                    <div class="list__item">
-                        <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">
-                            <li>
-                                <h3 class="archive__item-title" itemprop="headline"> <a href="https://academicpages.github.io/talks/2012-03-01-talk-1" rel="permalink">Talk 1 on Relevant Topic in Your Field </a></h3>
-                                <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> March 01, 2012</p>
-                                <p class="archive__item-excerpt" itemprop="description">Talk at UC San Francisco, Department of Testing, San Francisco, California</p>
-                            </li>
-                        </article>
-                    </div>
-                </ul>
-                <h1 id="teaching">Teaching</h1>
-                <ul>
-                    <div class="list__item">
-                        <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">
-                            <li>
-                                <h3 class="archive__item-title" itemprop="headline"> <a href="https://academicpages.github.io/teaching/2015-spring-teaching-1" rel="permalink">Teaching experience 2 </a></h3>
-                                <p class="archive__item-excerpt" itemprop="description"></p>
-                            </li>
-                        </article>
-                    </div>
-                    <div class="list__item">
-                        <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">
-                            <li>
-                                <h3 class="archive__item-title" itemprop="headline"> <a href="https://academicpages.github.io/teaching/2014-spring-teaching-1" rel="permalink">Teaching experience 1 </a></h3>
-                                <p class="archive__item-excerpt" itemprop="description"></p>
-                            </li>
-                        </article>
-                    </div>
-                </ul>
-                <h1 id="service-and-leadership">Service and leadership</h1>
-                <ul>
-                    <li>Currently signed in to 43 different slack teams</li>
-                </ul>
+                <head>
+                    <meta charset="utf-8">
+                    <title>Download CV</title>
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                </head>
+                <h1>CV</h1>
+                <a href="../Dandan.pdf" download="Dandan.pdf">Download CV</a>
+                <!-- <section>
+                    <h2>Position</h2>
+                    <ul>
+                        <li>Assistant Professor, Information Systems & Analytics
+                            National University of Singapore,  2018.07-Present</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Education</h2>
+                    <ul>
+                        <li>Ph.D., Information Systems, Tsinghua University, 2018</li>
+                        <li>Visiting Scholar, Information Systems, The University of Texas at Austin, 2015-2017</li>
+                        <li>B.S., Information Systems, Beijing University of Posts and Telecommunications, 2012</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Research Interests</h2>
+                    <p><b>Topics</b>: Digital Platform Design, Predictive Analytics</p>
+                    <p><b>Methodologies</b>: Econometric Analysis, Field Experiments, Computational Methods</p>
+                </section>
+                <section>
+                    <h2>Journal Publications</h2>
+                    <ul>
+                        <li>Warut Khern-am-nuai, Hossein Ghasemkhani, <b>Dandan Qiao</b>, Karthik Natarajan Kannan. 2023. “The Impact of Online Q&As on Product Sales: The Case of Amazon Answer”, Forthcoming at <i>Information Systems Research</i>.</li>
+                        <li>Jason Chan, Shu He, <b>Dandan Qiao</b>. 2023. Andrew B. Whinston. “Shedding Light on the Dark: The Impact of Legal Enforcement on Darknet Transactions”, Forthcoming at <i>Information Systems Research</i>.</li>
+                        <li><b>Dandan Qiao</b>, & Huaxia Rui. 2023. “Text Performance on the Vine Stage? The Effect of Incentive on Product Review Text Quality”. <i>Information Systems Research</i>, 34(2), pp.676-697.</li>
+                        <li><b>Dandan Qiao</b>, Shun-Yang Lee, Andrew B. Whinston, Qiang Wei, 2021. “Mitigating the Adverse Effect of Monetary Incentives on Voluntary Contributions Online”. <i>Journal of Management Information Systems</i>, 38(1), pp.82-107.</li>
+                        <li><b>Dandan Qiao</b>, Shun-Yang Lee, Andrew B. Whinston, Qiang Wei, 2020. “Financial
+                            Incentives Dampen Altruism in Online Prosocial Contributions: A Study of Online
+                            Reviews”. <i>Information Systems Research</i>, 31(4), pp.1361-1375.</li>
+                        <li>Liye Wang, Jin Zhang, Guoqing Chen, <b>Dandan Qiao</b>, 2020. “Identifying Comparable Entities with Indirectly Associative Relations and Word Embeddings from Web
+                            Search Logs”. <i>Decision Support Systems</i>, p.113465.</li>
+                        <li>Xunhua Guo, Qiang Wei, Guoqing Chen, Jin Zhang, <b>Dandan Qiao</b>, 2017. “Extracting Representative Information on Intra-Organizational Blogging Platforms”. <i>MIS Quarterly</i>, 41(4), pp.1105-1127.</li>
+                        <li><b>Dandan Qiao</b>, Jin Zhang, Qiang Wei, Guoqing Chen, 2017. “Finding Competitive
+                            Keywords from Query Logs to Enhance Search Engine Advertising”. <i>Information &
+                            Management</i>, 54(4), pp.531-543.</li>
+                        <li>Qiang Wei, <b>Dandan Qiao</b>, Jin Zhang, Guoqing Chen, Xunhua Guo, 2016. “A Novel
+                            Bipartite Graph based Competitiveness Degree Analysis from Query Logs”. <i>ACM
+                            Transactions on Knowledge Discovery from Data (TKDD)</i>, 11(2), pp.1-25</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Conferences</h2>
+                    <ul>
+                        <li>Dinghao Xi, Ying Lu, <b>Dandan Qiao</b>, Wei Xu, “Unveiling the Secrets of Collaboration on Video-Sharing Platforms” <i>International Conference on Information Systems</i> (ICIS), Hyderabad, India, 2023.</li>
+                        <li>Dinghao Xi, Ying Lu, <b>Dandan Qiao</b>, Wei Xu, “Unveiling the Secrets of Collaboration on Video-Sharing Platforms” INFORMS Conference on <i>Information Systems and Technology</i> (CIST), Arizona, United States, 2023.</li>
+                        <li>Haoyu Yuan, <b>Dandan Qiao</b>, Qiang Wei, “Decoding Persuasion: A Hierarchical Deep Learning Framework for Predicting Crowdfunding Success, ” <i>INFORMS Workshop on Data Science</i> (WDS), Arizona, United States, 2023.</li>
+                        <li>Jingyuan Deng, <b>Dandan Qiao</b>, Warut Khern-Am-Nuai, “An Empirical Study about
+                            the Impact of Incentivized Reviews on Product Sales: The Case of Amazon Vine Program” The 16th China Summer Workshop on Information Management (CSWIM),
+                            Changsha, China, 2023.</li>
+                        <li>Ying Lu, <b>Dandan Qiao</b>, Shu He, Xiaoying Xu, Bernard C Y Tan, “Exploration or
+                            Solidification: Modeling Users’ Dynamics of Collusive Behavior in Decentralized Online Communities” The 16th China Summer Workshop on Information Management
+                            (CSWIM), Changsha, China, 2023.</li>
+                        <li>Tong Yang, Benjiang Lu, <b>Dandan Qiao</b>, “The Impact of Vehicle Purchase Tax: A
+                            Construal Level Analysis of Consumer Reviews” The annual Pacific Asia Conference
+                            on Information Systems (PACIS), Nanchang, China, 2023</li>
+                        <li>Ying Lu, <b>Dandan Qiao</b>, Shu He, Bernard C Y Tan, “Secrets of Bellwethers: The
+                            Effect of Search Intermediary on Market Structure and Vendor Strategy in Darknet,”
+                            <i>INFORMS Conference on Information Systems and Technology</i> (CIST), Indianapolis,
+                            United States, 2022.</li>
+                        <li>Jingyuan Deng, Grace Gu, <b>Dandan Qiao</b>, “Wisdom Overlooked: Spillover Effects
+                            of Firm-Driven Contest on User Innovation and Crowd Education,” <i>INFORMS Conference on Information Systems and Technology</i> (CIST), Indianapolis, United States,
+                            2022.</li>
+                        <li>Jingyuan Deng, Grace Gu, <b>Dandan Qiao</b>, “Whom to Listen to and When? Empirically Studying User Innovation over Product Development Life Cycle,” <i>Seventeenth
+                            Symposium on Statistical Challenges in Electronic Commerce Research</i> (SCECR),
+                            Madrid, Spain, June 2022.</li>
+                        <li>Jingyuan Deng, Grace Gu, <b>Dandan Qiao</b>, “Whom to Listen to and When? Empirically Studying User Innovation over Product Development Life Cycle,” <i>Strategic
+                            Management Society</i> (SMS), London, UK, 2022.</li>
+                        <li>Lin Qiu, <b>Dandan Qiao</b>, Bernard C Y Tan, Andrew B. Whinston, “More than a
+                            Ride: An Investigation on Ride-Hailing Services and Racial Hate Crimes,” <i>Sixteenth
+                            Symposium on Statistical Challenges in Electronic Commerce Research</i> (SCECR),
+                            Madrid, Spain, June 2020.</li>
+                        <li>Jason Chan, Shu He, <b>Dandan Qiao</b>, Andrew B. Whinston, “Shedding Light on the
+                            Dark: The Impact of Legal Enforcement on Darknet Transactions,” <i>Workshop on
+                            Information Systems and Economics</i> (WISE), Munich, Germany, December 2019.</li>
+                        <li><b>Dandan Qiao</b>, Shun-Yang Lee, Andrew B. Whinston, Qiang Wei, “Overcoming the
+                            Crowding-Out Effect of Monetary Incentive on Pro-Social Behavior,” <i>International
+                            Conference on Information Systems</i>, Seoul, South Korea, December 2017.</li>
+                        <li><b>Dandan Qiao</b>, “Applying Financial Incentives in Online Pro-social Contexts: Crowdingout Effects and Overcoming Strategies,” <i>International Conference on Information
+                            Systems Doctoral Consortium</i>, Seoul, South Korea, December 2017.</li>
+                        <li><b>Dandan Qiao</b>, Shun-Yang Lee, Andrew B. Whinston, Qiang Wei, “Crowding-Out
+                            Effect Mitigation through Intervention Strategies,” <i>INFORMS Conference on Information Systems and Technology</i> (CIST), Houston, TX, October 2017.</li>
+                        <li>Samuel L. Blazek, <b>Dandan Qiao</b>, Andrew B. Whinston Guoqing Chen, “Dark Net
+                            Markets: Protect Your Privacy in Future E-commerce,” <i>Workshop on Information
+                            Systems and Economics</i> (WISE), Seoul, South Korea, December 2017.</li>
+                        <li>Samuel L. Blazek, <b>Dandan Qiao</b>, Deepayan Chakrabarti, Andrew B. Whinston,
+                            “The Price of Privacy: Insights from Anonymous Marketplace,” <i>Annual Digital Information Policy Scholars Conference</i>, George Mason University, Arlington, VA, April
+                            2017.</li>
+                        <li><b>Dandan Qiao</b>, Shun-Yang Lee, Andrew B. Whinston, Qiang Wei, “Incentive Provision and Pro-Social Behaviors,” <i>Hawaii International Conference on System Sciences</i>
+                            (HICSS), Big Island, HI, January 2017.</li>
+                        <li><b>Dandan Qiao</b>, Shun-Yang Lee, Andrew B. Whinston, Qiang Wei, “Incentive Provision and Pro-Social Behaviors,” <i>INFORMS Conference on Information Systems and
+                            Technology</i> (CIST), Nashville, TN, November 2016.</li>
+                        <li><b>Dandan Qiao</b>, Jin Zhang, “A Novel Keyword Suggestion Method to Achieve Competitive Advertising on Search Engines,” The Pacific Asia Conference on Information
+                            Systems (PACIS), Singapore, July 2015.</li>
+                        <li><b>Dandan Qiao</b>, Qiang Wei, Jin Zhang, Guoqing Chen, “A Bipartite Graph Based
+                            Competitiveness Degrees Analysis with Query Logs on Search Engine,” <i>Conference
+                            of the International Fuzzy Systems Association and the European Society for Fuzzy
+                            Logic and Technology</i> (IFSA-EUSFLAT), Gij´on, Spain, June 2015.</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Invited Talks</h2>
+                    <ul>
+                        <li>School of Business, Renmin University of China, 2023</li>
+                        <li>School of Business, University of Hong Kong, 2021</li>
+                        <li>School of Economics and Management, Tsinghua University, 2020</li>
+                        <li>School of Business, Indiana University Bloomington, 2017</li>
+                        <li>School of Business, Nanyang Technological University, 2017</li>
+                        <li>Claremont Graduate University, 2017</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Teaching</h2>
+                    <p><b>Teaching Interests</b></p>
+                    <ul>
+                        <li>Business Analytics</li>
+                        <li>Platform Design</li>
+                        <li>Computational Social Science</li>
+                    </ul>
+                    <p><b>Class Instructor / Teaching Assistant</b></p>
+                    <ul>
+                        <li>Mining Business Insights from Web Data (BT4222), National University of Singapore (2018-2023)</li>
+                        <li>Analytics Driven Design of Adaptive Systems (BT4014), National University of Singapore (2019-2023)</li>
+                        <li>Probability and Statistics, Tsinghua University / Chinese University of Hong Kong (2013-2015)</li>
+                    </ul>
+                    <p><b>Supervised Ph.D. Students</b></p>
+                    <ul>
+                        <li>Ying Lu, National University of Singapore, 5th-year</li>
+                        <li>Yiming Liu, National University of Singapore, 3rd-year</li>
+                        <li>Jingyuan Deng, National University of Singapore, 2nd-year</li>
+                        <li>Tong Yang, Dalian University of Technology, 4th-year</li>
+                        <li>Dinghao Xi, Renmin University of China, 4th-year</li>
+                        <li>Qian Xiong, Tsinghua University, 2nd-year</li>
+                        <li>Haoyu Yuan, Tsinghua University, 5th-year</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Services</h2>
+                    <p><b>Department Service</b></p>
+                    <ul>
+                        <li>Ph.D. coordinator, Department of Information Systems and Analytics, NUS, 2023 Jan - Present</li>
+                        <li>MComp IS committee member, Department of Information Systems and Analytics, NUS, 2020-2022</li>
+                    </ul>
+                    <p><b>Referee for Journals</b></p>
+                    <ul>
+                        <li>Management Science (MS)</li>
+                        <li>Information Systems Research (ISR)</li>
+                        <li>MIS Quarterly (MISQ)</li>
+                        <li>INFORMS Journal on Computing (JOC)</li>
+                        <li>Journal of Management Information Systems (JMIS)</li>
+                        <li>Production and Operations Management (POM)</li>
+                        <li>Journal of the Association for Information Science and Technology (JAIST)</li>
+                        <li>Information and Management (I&M)</li>
+                        <li>Electronic Commerce Research (ECR)</li>
+                    </ul>
+                    <p><b>Referee for Conferences</b></p>
+                    <ul>
+                        <li>International Conference on Information Systems (ICIS)</li>
+                        <li>Conference on Information Systems and Technology (CIST)</li>
+                        <li>Hawaii International Conference on System Sciences (HICSS)</li>
+                        <li>Workshop on Information Technologies and Systems (WITS)</li>
+                        <li>Pacific Asia Conference on Information Systems (PACIS)</li>
+                        <li>China Summer Workshop on Information Management (CSWIM)</li>
+                    </ul>
+                    <p><b>Editorship of Conferences</b></p>
+                    <ul>
+                        <li>Track Co-Chair for Pacific Asia Conference on Information Systems, 2023</li>
+                        <li>Track Associate Editor for International Conference on Information Systems, 2023, 2022, 2021, 2020, 2019</li>
+                        <li>Track Associate Editor for Pacific Asia Conference on Information Systems, 2022, 2021, 2020</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Honors, Awards, and Grants</h2>
+                    <p><b>Grants</b></p>
+                    <ul>
+                        <li>Ministry of Education Academic Research Fund Tier-1, 2021-2024</li>
+                        <li>Ministry of Education Academic Research Fund Start-up, 2018-2022</li>
+                        <li>NET Institute Summer Grant, Summer 2019</li>
+                    </ul>
+                    <p><b>Awards</b></p>
+                    <ul>
+                        <li>INFORMS ISS Gordon Davis Young Scholar Award, 2023</li>
+                        <li>Nomination for Singapore Young Scientist Awards, 2022</li>
+                        <li>17th Beijing Philosophy and Social Sciences Outstanding Achievement Awards, 2019</li>
+                        <li>Excellent Graduate of Beijing, 2018, 2012</li>
+                        <li>Excellent Doctoral Thesis, 2018</li>
+                        <li>China National Scholarship, 2016, 2009</li>
+                        <li>Tsinghua-Jiangzhen Scholarship, 2015, 2014</li>
+                    </ul>
+                </section> -->
             </div>
 
-        </div>
-
         <!-- Chatbot -->
-        <div>
+        <div class="chatbot-container">
             <button class="chatbot-toggler">
                 <span class="material-symbols-rounded">mode_comment</span>
                 <span class="material-symbols-outlined">close</span>
             </button>
+            <span class="chatbot-label">Chat with us!</span>
             <div class="chatbot">
                 <header>
                     <h2>Chatbot</h2>
@@ -501,8 +526,8 @@
                 </header>
                 <ul class="chatbox">
                     <li class="chat incoming">
-                    <span class="material-symbols-outlined">smart_toy</span>
-                    <p>Hi there 👋<br>How can I help you today?</p>
+                        <span class="material-symbols-outlined">smart_toy</span>
+                        <p>Hi there 👋<br>How can I help you today?</p>
                     </li>
                 </ul>
                 <div class="chat-input">

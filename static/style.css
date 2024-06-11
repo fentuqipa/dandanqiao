@@ -1,10 +1,43 @@
 .archive {
   padding-top: 30px;
 }
-.chatbot-toggler {
+
+.chatbot-container {
   position: fixed;
   bottom: 30px;
   right: 35px;
+  text-align: center;
+  z-index: 1000; /* Ensure the chatbot is on top of other content */
+}
+
+.chatbot-label {
+  display: block;
+  font-size: 20px;
+  color: #333;
+  background: #fff; /* Background for better visibility */
+  padding: 5px 10px; /* Padding for better spacing */
+  border-radius: 5px; /* Rounded corners for the label */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for better visibility */
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+.chatbot-toggler {
+  background-color: #4a8fe8;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  position: relative; /* Relative positioning for label adjustment */
+}
+
+.chatbot-toggler:hover + .chatbot-label {
+  display: block;
+}
+.chatbot-toggler {
+  position: fixed;
+  bottom: 70px;
+  right: 75px;
   outline: none;
   border: none;
   height: 50px;
@@ -34,8 +67,8 @@ body.show-chatbot .chatbot-toggler span:last-child {
 .chatbot {
   position: fixed;
   right: 35px;
-  bottom: 90px;
-  width: 420px;
+  bottom: 125px;
+  width: 450px;
   background: #fff;
   border-radius: 15px;
   overflow: hidden;
@@ -91,6 +124,7 @@ header h2 {
 .chatbox .chat {
   display: flex;
   list-style: none;
+  text-align: left;
 }
 .chatbox .outgoing {
   margin: 20px 0;
@@ -116,6 +150,7 @@ header h2 {
   color: #fff;
   font-size: 0.95rem;
   background: #4a8fe8;
+  text-align: left; /* Ensure left alignment */
 }
 .chatbox .incoming p {
   border-radius: 10px 10px 10px 0;

@@ -21,9 +21,9 @@ class CustomHandler(BaseCallbackHandler):
 class ChatBot:
     def __init__(self, is_debug=False):
         self.is_debug = is_debug
-        self.model = ChatOpenAI()
+        self.model = ChatOpenAI(openai_api_key="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")
         self.handler = CustomHandler()
-        self.embedding_function = OpenAIEmbeddings()
+        self.embedding_function = OpenAIEmbeddings(openai_api_key="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")
         self.retriever = Chroma(
             embedding_function=self.embedding_function,
             collection_name="documents",

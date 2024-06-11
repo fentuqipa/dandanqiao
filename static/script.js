@@ -19,7 +19,7 @@ const createChatLi = (message, className) => {
 }
 
 const generateResponse = (chatElement) => {
-    const API_URL = "http://127.0.0.1:5000/answer"
+    const API_URL = "https://0c00-137-132-26-118.ngrok-free.app/answer"
     const messageElement = chatElement.querySelector("p");
 
     // Define the properties and message for the API request

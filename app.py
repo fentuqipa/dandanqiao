@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, render_template, send_from_directory, request, jsonify
 from backend.src.chatbot import ChatBot
 
 app = Flask(__name__)
@@ -8,6 +8,9 @@ chatbot = ChatBot()
 def index():
     return render_template('index.html')
 
+@app.route('/Dandan.pdf')
+def download_cv():
+    return send_from_directory('.', 'Dandan.pdf')
 
 @app.route("/answer", methods=["GET", "POST"])
 def chat():
