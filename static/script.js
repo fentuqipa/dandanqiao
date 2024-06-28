@@ -19,7 +19,7 @@ const createChatLi = (message, className) => {
 }
 
 const generateResponse = (chatElement) => {
-    const API_URL = "https://0c00-137-132-26-118.ngrok-free.app/answer"
+    const API_URL = "https://stark-depths-65010-3d6b2c9723bf.herokuapp.com/"
     const messageElement = chatElement.querySelector("p");
 
     // Define the properties and message for the API request
