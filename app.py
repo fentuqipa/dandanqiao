@@ -14,7 +14,7 @@ class Config:
 
 
 app = Flask(__name__)
-chatbot = ChatBot()
+# chatbot = ChatBot()
 
 @app.route("/")
 def index():
@@ -24,13 +24,13 @@ def index():
 def download_cv():
     return send_from_directory('.', 'Dandan.pdf')
 
-@app.route("/answer", methods=["GET", "POST"])
-def chat():
-    req_data = request.get_json()
-    msg = req_data["msg"]
-    history = req_data["history"]
-    chat_history = convert_chat_history(history)
-    return chatbot.generate_response(msg, chat_history)[0]
+# @app.route("/answer", methods=["GET", "POST"])
+# def chat():
+#     req_data = request.get_json()
+#     msg = req_data["msg"]
+#     history = req_data["history"]
+#     chat_history = convert_chat_history(history)
+#     return chatbot.generate_response(msg, chat_history)[0]
 
 def convert_chat_history(history):
     assert len(history) % 2 == 0
