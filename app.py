@@ -2,7 +2,7 @@ from flask import Flask, render_template, send_from_directory, request, jsonify
 from backend.src.chatbot import ChatBot
 import os
 from dotenv import load_dotenv
-from flask_sqlalchemy import SQLAlchemy
+# from flask_sqlalchemy import SQLAlchemy
 
 # Load environment variables from .env file if present
 load_dotenv()
