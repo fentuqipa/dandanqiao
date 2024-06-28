@@ -44,4 +44,6 @@ if __name__ == '__main__':
     # app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'your_default_secret_key')
     # db = SQLAlchemy(app)
     # # app.config.from_object(Config)
-    app.run()
+    # app.run()
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port)
