@@ -30,7 +30,7 @@ def chat():
     msg = req_data["msg"]
     history = req_data["history"]
     chat_history = convert_chat_history(history)
-    return chatbot.generate_response(msg, chat_history)[0]
+    return chatbot.generate_response(msg, chat_history=None)[0]
 
 def convert_chat_history(history):
     assert len(history) % 2 == 0
