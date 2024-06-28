@@ -28,7 +28,7 @@ const generateResponse = (chatElement) => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
             msg: userMessage, 
-            history: chatHistory
+            // history: chatHistory
         }),
     }
 
@@ -36,7 +36,7 @@ const generateResponse = (chatElement) => {
     fetch(API_URL, requestOptions).then(res => res.text())
     .then(ans => {
         messageElement.textContent = ans
-        chatHistory.push(userMessage, ans)
+        // chatHistory.push(userMessage, ans)
     }).catch(() => {
         messageElement.classList.add("error");
         messageElement.textContent = "Oops! Something went wrong. Please try again.";

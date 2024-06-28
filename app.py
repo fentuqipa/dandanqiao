@@ -2,6 +2,7 @@ from flask import Flask, render_template, send_from_directory, request, jsonify
 from backend.src.chatbot import ChatBot
 import os
 from dotenv import load_dotenv
+from openai import OpenAI
 # from flask_sqlalchemy import SQLAlchemy
 
 # Load environment variables from .env file if present
@@ -14,7 +15,7 @@ class Config:
 
 
 app = Flask(__name__)
-chatbot = ChatBot()
+# chatbot = ChatBot()
 
 @app.route("/")
 def index():
@@ -24,13 +25,30 @@ def index():
 def download_cv():
     return send_from_directory('.', 'Dandan.pdf')
 
+# @app.route("/answer", methods=["GET", "POST"])
+# def chat():
+#     req_data = request.get_json()
+#     msg = req_data["msg"]
+#     history = req_data["history"]
+#     chat_history = convert_chat_history(history)
+#     return chatbot.generate_response(msg, chat_history)[0]
 @app.route("/answer", methods=["GET", "POST"])
 def chat():
+    client = OpenAI(api_key="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")
     req_data = request.get_json()
     msg = req_data["msg"]
-    history = req_data["history"]
-    chat_history = convert_chat_history(history)
-    return chatbot.generate_response(msg, chat_history=None)[0]
+    while True:
+        # try:
+        response = client.chat.completions.create(
+            model="gpt-3.5-turbo",
+            response_format={ "type": "text" },
+            messages=[
+                {"role": "user", "content": msg}
+                ],
+                timeout = 10
+                )
+        # print(response.choices[0].message.content)
+        return response.choices[0].message.content
 
 def convert_chat_history(history):
     assert len(history) % 2 == 0

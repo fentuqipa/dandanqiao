@@ -24,11 +24,11 @@ class ChatBot:
         self.model = ChatOpenAI(openai_api_key="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")
         self.handler = CustomHandler()
         self.embedding_function = OpenAIEmbeddings(openai_api_key="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")
-        # self.retriever = Chroma(
-        #     embedding_function=self.embedding_function,
-        #     collection_name="documents",
-        #     persist_directory="backend/chroma", 
-        # ).as_retriever()
+        self.retriever = Chroma(
+            embedding_function=self.embedding_function,
+            collection_name="documents",
+            persist_directory="backend/chroma", 
+        ).as_retriever()
     
     def create_chain(self):
         qa_system_prompt = """You are Dandan's assisstant chatbot. \
@@ -74,12 +74,12 @@ class ChatBot:
         return history
 
     def generate_response(self, query, chat_history):
-        # history = self.process_chat_history(chat_history)
+        history = self.process_chat_history(chat_history)
         conversational_chain = self.create_chain()
         response = conversational_chain.invoke(
             {
                 "input": query,
-                # "chat_history": history,
+                "chat_history": history,
             }, 
             config={"callbacks": [self.handler]}
         )["answer"]
