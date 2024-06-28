@@ -1,5 +1,16 @@
 from flask import Flask, render_template, send_from_directory, request, jsonify
 from backend.src.chatbot import ChatBot
+import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env file if present
+load_dotenv()
+
+class Config:
+    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL')
+    SECRET_KEY = os.environ.get('SECRET_KEY', 'your_default_secret_key')
+    DEBUG = os.environ.get('FLASK_ENV') != 'production'
+
 
 app = Flask(__name__)
 chatbot = ChatBot()
@@ -28,4 +39,5 @@ def convert_chat_history(history):
     return chat_history
 
 if __name__ == '__main__':
+    app.config.from_object(Config)
     app.run()
