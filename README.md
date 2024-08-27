@@ -28,8 +28,11 @@ pip install -r requirements.txt
 pip install -r requirements.txt
 ```
 
-## Step 2. Run the code
+## Step 2. Edit the project
 
-```
-python3 app.py
-```
+1. Fork the project to your own github repo.
+2. Clone the repo to your local site.
+3. Modify on the local site.
+4. Push the modified code to your github repo.
+5. Deploy the branch on Heroku.
+   
