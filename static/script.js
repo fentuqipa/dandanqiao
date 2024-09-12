@@ -19,7 +19,6 @@ const createChatLi = (message, className) => {
 }
 
 const generateResponse = (chatElement) => {
-    const API_URL = "https://www.qiaodandan.com/answer"
     const messageElement = chatElement.querySelector("p");
 
     // Define the properties and message for the API request
@@ -33,7 +32,7 @@ const generateResponse = (chatElement) => {
     }
 
     // Send POST request to API, get response
-    fetch(API_URL, requestOptions)
+    fetch("/answer", requestOptions)
     .then(res => {
         if (!res.ok) {
             throw new Error(`HTTP error! status: ${res.status}`);
