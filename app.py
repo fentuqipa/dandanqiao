@@ -15,7 +15,8 @@ class Config:
 
 
 app = Flask(__name__)
-# chatbot = ChatBot()
+openai_api_key = os.environ.get('OPENAI_API_KEY')
+chatbot = ChatBot(api_key=openai_api_key)
 
 @app.route("/")
 def index():
@@ -25,30 +26,13 @@ def index():
 def download_cv():
     return send_from_directory('.', 'Dandan.pdf')
 
-# @app.route("/answer", methods=["GET", "POST"])
-# def chat():
-#     req_data = request.get_json()
-#     msg = req_data["msg"]
-#     history = req_data["history"]
-#     chat_history = convert_chat_history(history)
-#     return chatbot.generate_response(msg, chat_history)[0]
-@app.route("/answer", methods=["GET", "POST"])
+@app.route("/answer", methods=["POST"])
 def chat():
-    client = OpenAI(api_key="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")
     req_data = request.get_json()
     msg = req_data["msg"]
-    while True:
-        # try:
-        response = client.chat.completions.create(
-            model="gpt-3.5-turbo",
-            response_format={ "type": "text" },
-            messages=[
-                {"role": "user", "content": msg}
-                ],
-                timeout = 10
-                )
-        # print(response.choices[0].message.content)
-        return response.choices[0].message.content
+    history = req_data["history"]
+    chat_history = convert_chat_history(history)
+    return chatbot.generate_response(msg, chat_history)[0]
 
 def convert_chat_history(history):
     assert len(history) % 2 == 0

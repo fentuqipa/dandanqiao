@@ -19,11 +19,11 @@ class CustomHandler(BaseCallbackHandler):
         self.prompt = formatted_prompts
 
 class ChatBot:
-    def __init__(self, is_debug=False):
+    def __init__(self, api_key, is_debug=False):
         self.is_debug = is_debug
-        self.model = ChatOpenAI(openai_api_key="sk-proj-3jRHmd1HTnNamwlzXZ2fT3BlbkFJ67kgbdAiRJ5pJHuZTkjT")
+        self.model = ChatOpenAI(api_key=api_key)
         self.handler = CustomHandler()
-        self.embedding_function = OpenAIEmbeddings(openai_api_key="sk-proj-3jRHmd1HTnNamwlzXZ2fT3BlbkFJ67kgbdAiRJ5pJHuZTkjT")
+        self.embedding_function = OpenAIEmbeddings(api_key=api_key)
         self.retriever = Chroma(
             embedding_function=self.embedding_function,
             collection_name="documents",

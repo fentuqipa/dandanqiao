@@ -19,7 +19,6 @@ const createChatLi = (message, className) => {
 }
 
 const generateResponse = (chatElement) => {
-    const API_URL = "https://www.qiaodandan.com/answer"
     const messageElement = chatElement.querySelector("p");
 
     // Define the properties and message for the API request
@@ -28,15 +27,20 @@ const generateResponse = (chatElement) => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
             msg: userMessage, 
-            // history: chatHistory
+            history: chatHistory
         }),
     }
 
     // Send POST request to API, get response
-    fetch(API_URL, requestOptions).then(res => res.text())
-    .then(ans => {
+    fetch("/answer", requestOptions)
+    .then(res => {
+        if (!res.ok) {
+            throw new Error(`HTTP error! status: ${res.status}`);
+        }
+        return res.text();
+    }).then(ans => {
         messageElement.textContent = ans
-        // chatHistory.push(userMessage, ans)
+        chatHistory.push(userMessage, ans)
     }).catch(() => {
         messageElement.classList.add("error");
         messageElement.textContent = "Oops! Something went wrong. Please try again.";
