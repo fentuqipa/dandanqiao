@@ -7,6 +7,10 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 class VectorDB:
     def __init__(self, persist_dir="chroma/", chunk_size=1500, chunk_overlap=500):
+        """
+            chunk_size: The size of each chunk of text to embed.
+            chunk_overlap: The number of characters to overlap between chunks.
+        """
         self.text_splitter = RecursiveCharacterTextSplitter.from_tiktoken_encoder(
             model_name="gpt-4",
             chunk_size=chunk_size,
@@ -14,13 +18,14 @@ class VectorDB:
         )
         self.persist_dir = persist_dir
         self.embedding = OpenAIEmbeddings(show_progress_bar=True)
+        self.pdf_dir = "data/papers"
+        self.text_dir = "data/texts"
 
     def load_pdf_documents(self):
-        data_dir = "data/papers"
-        document_list = os.listdir(data_dir)
+        document_list = os.listdir(self.pdf_dir)
         docs = []
         for doc_name in document_list:
-            doc_path = os.path.join(data_dir, doc_name)
+            doc_path = os.path.join(self.pdf_dir, doc_name)
             doc = PyPDFLoader(doc_path).load()
             docs.extend(doc)
         print("Number of documents loaded: ", len(document_list))
@@ -28,19 +33,30 @@ class VectorDB:
         return docs
     
     def load_text_documents(self):
-        data_dir = "data/texts"
-        document_list = os.listdir(data_dir)
+        document_list = os.listdir(self.text_dir)
         docs = []
         for doc_name in document_list:
-            doc_path = os.path.join(data_dir, doc_name)
+            doc_path = os.path.join(self.text_dir, doc_name)
             doc = TextLoader(doc_path).load()
             docs.extend(doc)
         print("Number of documents loaded: ", len(document_list))
         return docs
 
     def load_all_documents(self):
-        pdf_data = self.load_pdf_documents()
-        web_data = self.load_text_documents()
+        # check if the papers directory exists
+        if not os.path.exists(self.pdf_dir):
+            print("There is no papers directory. Skip")
+            pdf_data = []
+        else:
+            pdf_data = self.load_pdf_documents()
+
+        # check if the texts directory exists
+        if not os.path.exists(self.text_dir):
+            print("There is no texts directory. Skip")
+            web_data = []
+        else:
+            web_data = self.load_text_documents()
+
         return pdf_data + web_data
     
     def chunk_doc(self, docs):
@@ -51,22 +67,34 @@ class VectorDB:
     
     def embed_docs(self):
         docs = self.load_all_documents()
+        if len(docs) == 0:
+            print("No documents to embed.")
+            return
+        
         chunked_docs = self.chunk_doc(docs)
         print("Embedding chunks...")
         vectordb = Chroma(
             persist_directory=self.persist_dir,
             collection_name="documents",
         )
-        small_chunks = [chunked_docs[:50], chunked_docs[50:100], chunked_docs[100:150], chunked_docs[150:]]
-        for small_chunk in small_chunks:
-            vectordb.from_documents(
-                documents=small_chunk,
-                embedding=self.embedding,
-                collection_name="documents",
-                persist_directory=self.persist_dir
-            )
-            print("Iteration #vectors: ", vectordb._collection.count())
-            time.sleep(60)
+
+        batch_size = 30
+        i = 0
+        while i < len(chunked_docs):
+            batch = chunked_docs[i:i+batch_size]
+            try:
+                vectordb.from_documents(
+                    documents=batch,
+                    embedding=self.embedding,
+                    collection_name="documents",
+                    persist_directory=self.persist_dir
+                )
+                i += batch_size
+                print("Embedded ", len(batch), " documents.")
+            except Exception as e:
+                print("An error occurred. Sleeping for 60 seconds before retrying.")
+                time.sleep(60) # sleep for 60 seconds to avoid rate limit
+
         print("Done embedding.")
         print("Number of vectors: ", vectordb._collection.count())
         return vectordb
