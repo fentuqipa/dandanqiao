@@ -618,54 +618,6 @@ export const conferencePublications: TimelinePublication[] = [
 ];
 
 export const underReviewPublications: TimelinePublication[] = [
-  {
-    year: "",
-    text: (
-      <>
-        Jingyuan Deng, <b>Dandan Qiao</b>, and Warut Khern-Am- Nuai, “An Empirical Study about the Impact of Incentivized Reviews on Product Sales: The Case of Amazon Vine Program”, Under 3rd-Round Revision at <i>MIS Quarterly</i>.
-      </>
-    ),
-  },
-  {
-    year: "",
-    text: (
-      <>
-        Jingyuan Deng, Grace Gu, <b>Dandan Qiao</b>, “Unraveling the Role of Public Crowds in Driving Innovation for Technology Product Development”, Invited for 3rd-Round Review at <i>MIS Quarterly</i>.
-      </>
-    ),
-  },
-  {
-    year: "",
-    text: (
-      <>
-        Haoyu Yuan, <b>Dandan Qiao</b>, Qiang Wei. “Decoding Persuasion: A Hierarchical Deep Learning Framework for Predicting Crowdfunding Success, ” Invited for 3rd-Round Review at <i>Journal of Management Information Systems</i>.
-      </>
-    ),
-  },
-  {
-    year: "",
-    text: (
-      <>
-        Qian Xiong, Mingxuan Zheng, <b>Dandan Qiao</b> and Jingjing Li, “Understanding Impact of Social Media Brand Activism on Product Sales” Invited for 2nd-Round Review at <i>MIS Quarterly</i>.
-      </>
-    ),
-  },
-  {
-    year: "",
-    text: (
-      <>
-        Dinghao Xi, Ying Lu, <b>Dandan Qiao</b> and Wei Xu, “Unveiling the Secrets of Collab oration in Online Video Sharing Platforms” Invited for 2nd-Round Review at <i>MIS Quarterly</i>.
-      </>
-    ),
-  },
-  {
-    year: "",
-    text: (
-      <>
-        Jiaxu Peng, Jungpil Hahn, <b>Dandan Qiao</b>, “Predictive Analytics in Changing Environments: Trade-Offs in Response to Changes in Data Patterns”, Invited for 2nd Round Review at <i>Information Systems Research</i>.
-      </>
-    ),
-  },
   /*
   {
     year: "",
@@ -695,6 +647,54 @@ export const underReviewPublications: TimelinePublication[] = [
 ];
 
 export const workingPaperPublications: TimelinePublication[] = [
+  {
+    year: "",
+    text: (
+      <>
+        “An Empirical Study about the Impact of Incentivized Reviews on Product Sales: The Case of Amazon Vine Program” with Jingyuan Deng, and Warut Khern-Am-Nuai, Working Ppaer.
+      </>
+    ),
+  },
+  {
+    year: "",
+    text: (
+      <>
+        “Unraveling the Role of Public Crowds in Driving Innovation for Technology Product Development” with Jingyuan Deng, and Grace Gu, Working Paper.
+      </>
+    ),
+  },
+  {
+    year: "",
+    text: (
+      <>
+        “Decoding Persuasion: A Hierarchical Deep Learning Framework for Predicting Crowdfunding Success”, with Haoyu Yuan, and Qiang Wei, Working Paper.
+      </>
+    ),
+  },
+  {
+    year: "",
+    text: (
+      <>
+        “Understanding Impact of Social Media Brand Activism on Product Sales” with Qian Xiong, Mingxuan Zheng, and Jingjing Li, Working Paper.
+      </>
+    ),
+  },
+  {
+    year: "",
+    text: (
+      <>
+        “Unveiling the Secrets of Collab oration in Online Video Sharing Platforms” with Dinghao Xi, Ying Lu, and Wei Xu, Working Paper.
+      </>
+    ),
+  },
+  {
+    year: "",
+    text: (
+      <>
+        “Predictive Analytics in Changing Environments: Trade-Offs in Response to Changes in Data Patterns” with Jiaxu Peng, and Jungpil Hahn, Working Paper.
+      </>
+    ),
+  },
   {
     year: "",
     text: (
