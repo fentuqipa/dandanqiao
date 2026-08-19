@@ -17,7 +17,6 @@ type PublicationFilter =
   | "all"
   | "journals"
   | "conferences"
-  | "under-review"
   | "working-papers";
 
 const publicationFilters: Array<{
@@ -27,7 +26,6 @@ const publicationFilters: Array<{
   { label: "All", value: "all" },
   { label: "Journals", value: "journals" },
   { label: "Conferences", value: "conferences" },
-  { label: "Under Review", value: "under-review" },
   { label: "Working Papers", value: "working-papers" },
 ];
 
@@ -35,7 +33,6 @@ const publicationHeadings: Record<PublicationFilter, string> = {
   all: "All Publications",
   journals: "Journal Publications",
   conferences: "Conference Publications",
-  "under-review": "Under Review",
   "working-papers": "Working Papers",
 };
 
@@ -72,8 +69,6 @@ export const ResearchSection = forwardRef<HTMLElement>(
         publications = journalPublications;
       } else if (activeFilter === "conferences") {
         publications = conferencePublications;
-      } else if (activeFilter === "under-review") {
-        publications = underReviewPublications;
       } else if (activeFilter === "working-papers") {
         publications = workingPaperPublications;
       } else {

@@ -125,15 +125,14 @@ All four publication arrays use the shared `TimelinePublication` type and are ma
 
 ### 7.2 Category tabs
 
-The publication controls provide five tabs:
+The publication controls provide four tabs:
 
 - **All**: merges every populated publication category into one timeline and sorts them by numeric year in descending order. For matching years, existing source order is preserved. Every card in this view displays its category in a small top-left tag.
 - **Journals**: displays journal publications only.
 - **Conferences**: displays conference publications only.
-- **Under Review**: displays papers currently under review.
 - **Working Papers**: displays current working papers.
 
-The category tags appear only in the All tab; cards in individual category tabs do not display them. The active tab uses a dark background and exposes its state through `aria-selected`.
+Papers under review do not have a dedicated tab and remain available through the All tab. The category tags appear only in the All tab; cards in individual category tabs do not display them. The active tab uses a dark background and exposes its state through `aria-selected`.
 
 ### 7.3 Publication search
 
@@ -461,7 +460,7 @@ A release satisfies the current specification when:
 1. All six hotbar targets scroll to their corresponding section and the active item updates while scrolling.
 2. About displays the portrait, academic biography, research interests, and all five actions.
 3. The All publication tab renders one merged, descending-by-year timeline.
-4. Journal and Conference tabs show only their respective publication types.
+4. Journal, Conference, and Working Papers tabs show only their respective publication types; papers under review remain visible through the All tab.
 5. Publication search filters the active category by title, author, or venue without a page reload.
 6. At most 10 publications appear before expansion, `Show More Publications` reveals all matching entries, and `Hide Extra Publications` restores the limited view.
 7. Linked publication cards open the correct external URL in a new tab.
